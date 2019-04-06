@@ -15,15 +15,11 @@ export default new Router({
     },
     {
       path: '/home',
-      name: 'home',
+      name: 'Home',
       component: Home
     },
     {
-      path: '/proyect',
-      name: 'proyect',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+      path: '/project/:id',
       component: Proyecto
     }
   ]

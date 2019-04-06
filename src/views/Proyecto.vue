@@ -4,6 +4,9 @@
     :items="items"/>
     <NavMov class="hidden-md-and-up"
     :items="items"/>
+    <div >
+      Proyect ID is: {{ $route.params.id }}
+    </div>
 
     <Footer :items="icons"/>
 

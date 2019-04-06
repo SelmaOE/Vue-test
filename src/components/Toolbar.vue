@@ -6,7 +6,7 @@
 
     <v-toolbar-items v-for="item in this.items"
     :key="item.title" align-center fill-height justify-end>
-      <v-btn flat>
+      <v-btn flat :href="'#'+item.ref">
         <span> {{item.title}}</span>
       </v-btn>
     </v-toolbar-items>
