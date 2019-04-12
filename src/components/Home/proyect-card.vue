@@ -4,7 +4,7 @@
     <v-flex xs12 sm6 md4 v-for= "proyect in proyects" :key="proyect.title">
       <!-- <v-hover> -->
         <v-card hover :href="'/project/'+proyect.id" class="project hvr-rectangle-out" >
-          <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"> </v-img>
+          <v-img :src="proyect.image" height="300px"> </v-img>
 
             <div>
               <h2>{{ proyect.title }}</h2>
@@ -34,10 +34,34 @@
     data () {
       return {
         proyects:[
-        {id:1, title: 'Proyecto 1', card_text: 'Descripcion del proyecto 1', importance: 1},
-        {id:2, title: 'Proyecto 2', card_text: 'Descripcion del proyecto 2', importance: 3},
-        {id:3, title: 'Proyecto 3', card_text: 'Descripcion del proyecto 3', importance: 2},
-        {id:4, title: 'Proyecto 4', card_text: 'Descripcion del proyecto 4', importance: 1}
+        {id:1, title: 'Proyecto 1', card_text: 'Descripcion del proyecto 1', image:require('@/assets/image41.png'),
+        photos:[
+          {src:require("@/assets/image41.png")},
+          {src:require("@/assets/image42.png")},
+          {src:require("@/assets/image43.png")},
+          {src:require("@/assets/image44.png")}
+        ]},
+        {id:2, title: 'Proyecto 2', card_text: 'Descripcion del proyecto 2', image:require('@/assets/image42.png'),
+        photos:[
+          {src:require("@/assets/image41.png")},
+          {src:require("@/assets/image42.png")},
+          {src:require("@/assets/image43.png")},
+          {src:require("@/assets/image44.png")}
+        ]},
+        {id:3, title: 'Proyecto 3', card_text: 'Descripcion del proyecto 3', image:require('@/assets/image43.png'),
+        photos:[
+          {src:require("@/assets/image41.png")},
+          {src:require("@/assets/image42.png")},
+          {src:require("@/assets/image43.png")},
+          {src:require("@/assets/image44.png")}
+        ]},
+        {id:4, title: 'Proyecto 4', card_text: 'Descripcion del proyecto 4', image:require('@/assets/image41.png'),
+        photos:[
+          {src:require("@/assets/image41.png")},
+          {src:require("@/assets/image42.png")},
+          {src:require("@/assets/image43.png")},
+          {src:require("@/assets/image44.png")}
+        ]}
         ]
 
       }

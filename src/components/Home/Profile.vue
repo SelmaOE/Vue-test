@@ -2,7 +2,7 @@
   <div class="profile-set">
     <div class="mascara">
         <v-avatar class="avatar" size ="300px">
-            <img src='../assets/vr.png'/>
+            <img src='@/assets/vr.png'/>
         </v-avatar>
         <h1 id="name">{{ name }}</h1>
         <h2 id="ocupation">{{ ocupation }}</h2>
@@ -37,7 +37,7 @@ h1, h2{
 .profile-set{
   display: flex;
   justify-content: center;
-  background-image: url('../assets/cinema.png');
+  background-image: url('../../assets/cinema.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;

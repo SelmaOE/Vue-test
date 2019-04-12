@@ -5,7 +5,8 @@
     <NavMov class="hidden-md-and-up"
     :items="items"/>
     <div >
-      Proyect ID is: {{ $route.params.id }}
+      <CarouselProject></CarouselProject>
+      <ProyectProfile></ProyectProfile>
     </div>
 
     <Footer :items="icons"/>
@@ -14,14 +15,18 @@
 </template>
 
 <script>
-  import Toolbar from '@/components/Toolbar.vue'
-  import NavMov from '@/components/NavMov.vue'
-  import Footer from '@/components/Footer.vue'
+  import Toolbar from '@/components/Shared/Toolbar.vue'
+  import NavMov from '@/components/Shared/NavMov.vue'
+  import CarouselProject from '@/components/Project/Carousel-Project'
+  import ProyectProfile from '@/components/Project/ProyectProfile'
+  import Footer from '@/components/Shared/Footer.vue'
   export default {
     name: 'Proyecto',
     components: {
       Toolbar,
       NavMov,
+      CarouselProject,
+      ProyectProfile,
       Footer
     },
     data () {
@@ -31,6 +36,7 @@
           { title: 'SKILLSET', icon: 'dashboard' },
           { title: 'CONTACTO', icon: 'account_box'}
         ],
+
         icons: [
           'fab fa-facebook',
           'fab fa-twitter',

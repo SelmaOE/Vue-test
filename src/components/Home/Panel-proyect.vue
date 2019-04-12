@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import ProyectCard from '@/components/proyect-card.vue'
+  import ProyectCard from '@/components/Home/proyect-card.vue'
 
   export default{
     components:{

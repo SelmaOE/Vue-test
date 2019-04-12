@@ -22,11 +22,11 @@
     data(){
       return{
         skills:[
-          {src:"@/assets/argument.png",alt:"The Argument", value: 90, title:'Argumenting'},
-          {src:"@/assets/potato.png", alt:"Potato", value: 40, title:'Creativity'},
-          {src:"@/assets/boxing.png", alt:"Boxing", value: 30, title:'Boxing'},
-          {src:"@/assets/gang.png", alt:"Gang", value: 100, title:'Social'},
-          {src:"/assets/motorbike.png", alt:"Motorbike", value: 70, title: 'Motorbike' }
+          {value: 90, title:'Argumenting'},
+          {value: 40, title:'Creativity'},
+          {value: 30, title:'Boxing'},
+          {value: 100, title:'Social'},
+          {value: 70, title: 'Motorbike' }
 
         ]
       }

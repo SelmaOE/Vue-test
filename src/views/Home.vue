@@ -36,13 +36,13 @@
 </template>
 
 <script>
-  import Toolbar from '@/components/Toolbar.vue'
-  import NavMov from '@/components/NavMov.vue'
-  import Profile from '@/components/Profile.vue'
-  import PanelProyect  from '@/components/Panel-proyect.vue'
-  import Skillset from '@/components/skillset.vue'
-  import Contact from '@/components/my-contact.vue'
-  import Footer from '@/components/Footer.vue'
+  import Toolbar from '@/components/Shared/Toolbar.vue'
+  import NavMov from '@/components/Shared/NavMov.vue'
+  import Profile from '@/components/Home/Profile.vue'
+  import PanelProyect  from '@/components/Home/Panel-proyect.vue'
+  import Skillset from '@/components/Home/skillset.vue'
+  import Contact from '@/components/Home/my-contact.vue'
+  import Footer from '@/components/Shared/Footer.vue'
   export default {
     name: 'Proyecto',
     components: {
