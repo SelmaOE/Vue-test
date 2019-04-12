@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="header-section">
-      <h1 >{{projectName}}</h1>
+      <h1 >{{projectDetails.title}}</h1>
       <hr id=divider>
-      <p>{{projectPhrase}}</p>
+      <p>{{projectDetails.card_text}}</p>
     </div>
   </div>
 
@@ -11,12 +11,6 @@
 
 <script>
   export default{
-    data(){
-      return{
-        projectName: 'Proyecto 3',
-        projectPhrase: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun'
-      }
-    },
     props:['projectDetails']
   }
 

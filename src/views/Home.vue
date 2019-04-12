@@ -12,7 +12,7 @@
           <h1 >Projects</h1>
           <hr id=divider>
         </div>
-        <PanelProyect></PanelProyect>
+        <ProyectCard></ProyectCard>
       </div>
       <div id="skills" class="proyect-set">
         <div class="header-section">
@@ -39,7 +39,7 @@
   import Toolbar from '@/components/Shared/Toolbar.vue'
   import NavMov from '@/components/Shared/NavMov.vue'
   import Profile from '@/components/Home/Profile.vue'
-  import PanelProyect  from '@/components/Home/Panel-proyect.vue'
+  import ProyectCard  from '@/components/Home/proyect-card.vue'
   import Skillset from '@/components/Home/skillset.vue'
   import Contact from '@/components/Home/my-contact.vue'
   import Footer from '@/components/Shared/Footer.vue'
@@ -49,7 +49,7 @@
       Toolbar,
       NavMov,
       Profile,
-      PanelProyect,
+      ProyectCard,
       Skillset,
       Contact,
       Footer

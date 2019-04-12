@@ -6,11 +6,9 @@ import Proyecto from './views/Proyecto.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
   routes: [
     {
-      path:'*',
+      path:'/',
       redirect: '/home'
     },
     {
@@ -19,7 +17,8 @@ export default new Router({
       component: Home
     },
     {
-      path: '/project/:id',
+      path: '/project/:Pid',
+      name:'Proyecto',
       component: Proyecto
     }
   ]

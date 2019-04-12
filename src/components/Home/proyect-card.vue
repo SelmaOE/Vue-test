@@ -1,30 +1,31 @@
 <template>
+  <v-layout row wrap align-center fill-height>
+    <v-layout row wrap justify-center>
+      <v-flex xs12 sm6 md4 v-for= "proyect in proyects" :key="proyect.title">
+        <!-- <v-hover> -->
+          <v-card hover @click="goToProject(proyect.id)" class="project hvr-rectangle-out" >
+            <v-img :src="proyect.image" height="300px"> </v-img>
 
-  <v-layout row wrap justify-center>
-    <v-flex xs12 sm6 md4 v-for= "proyect in proyects" :key="proyect.title">
-      <!-- <v-hover> -->
-        <v-card hover :href="'/project/'+proyect.id" class="project hvr-rectangle-out" >
-          <v-img :src="proyect.image" height="300px"> </v-img>
+              <div>
+                <h2>{{ proyect.title }}</h2>
+                <p> {{ proyect.card_text }} </p>
+              </div>
+
+          </v-card>
+        <!-- </v-hover> -->
+      </v-flex>
+      <v-flex xs12 sm6 md4>
+        <v-card dark height="100%" href="https://github.com/SelmaOE" target="_blank" class="project hvr-rectangle-out-orange" >
+          <v-icon size="150px" class="fab fa-github"> </v-icon>
 
             <div>
-              <h2>{{ proyect.title }}</h2>
-              <p> {{ proyect.card_text }} </p>
+              <h2 class="headline mb-0"> Github </h2>
+              <p> Want to see more? See my Github </p>
             </div>
-
         </v-card>
-      <!-- </v-hover> -->
-    </v-flex>
-    <v-flex xs12 sm6 md4>
-      <v-card dark height="100%" href="https://github.com/SelmaOE" target="_blank" class="project hvr-rectangle-out-orange" >
-        <v-icon size="150px" class="fab fa-github"> </v-icon>
 
-          <div>
-            <h2 class="headline mb-0"> Github </h2>
-            <p> Want to see more? See my Github </p>
-          </div>
-      </v-card>
-
-    </v-flex>
+      </v-flex>
+    </v-layout>
   </v-layout>
 
 </template>
@@ -34,36 +35,17 @@
     data () {
       return {
         proyects:[
-        {id:1, title: 'Proyecto 1', card_text: 'Descripcion del proyecto 1', image:require('@/assets/image41.png'),
-        photos:[
-          {src:require("@/assets/image41.png")},
-          {src:require("@/assets/image42.png")},
-          {src:require("@/assets/image43.png")},
-          {src:require("@/assets/image44.png")}
-        ]},
-        {id:2, title: 'Proyecto 2', card_text: 'Descripcion del proyecto 2', image:require('@/assets/image42.png'),
-        photos:[
-          {src:require("@/assets/image41.png")},
-          {src:require("@/assets/image42.png")},
-          {src:require("@/assets/image43.png")},
-          {src:require("@/assets/image44.png")}
-        ]},
-        {id:3, title: 'Proyecto 3', card_text: 'Descripcion del proyecto 3', image:require('@/assets/image43.png'),
-        photos:[
-          {src:require("@/assets/image41.png")},
-          {src:require("@/assets/image42.png")},
-          {src:require("@/assets/image43.png")},
-          {src:require("@/assets/image44.png")}
-        ]},
-        {id:4, title: 'Proyecto 4', card_text: 'Descripcion del proyecto 4', image:require('@/assets/image41.png'),
-        photos:[
-          {src:require("@/assets/image41.png")},
-          {src:require("@/assets/image42.png")},
-          {src:require("@/assets/image43.png")},
-          {src:require("@/assets/image44.png")}
-        ]}
+        {id:1, title: 'Proyecto 1', card_text: 'Descripcion del proyecto 1', image:require('@/assets/project1.png')},
+        {id:2, title: 'Proyecto 2', card_text: 'Descripcion del proyecto 2', image:require('@/assets/image42.png')},
+        {id:3, title: 'Proyecto 3', card_text: 'Descripcion del proyecto 3', image:require('@/assets/image43.png')},
+        {id:4, title: 'Proyecto 4', card_text: 'Descripcion del proyecto 4', image:require('@/assets/image41.png')}
         ]
 
+      }
+    },
+    methods:{
+      goToProject(projectID){
+        this.$router.push({name:'Proyecto',params:{Pid:projectID}})
       }
     }
   }
