@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <Footer></Footer>
+    <Footer :icons="icons"></Footer>
 
   </v-app>
 </template>
@@ -60,6 +60,12 @@
           { title: 'PROYECTOS', icon: 'card_travel', ref: 'project'},
           { title: 'SKILLSET', icon: 'dashboard', ref:'skills' },
           { title: 'CONTACTO', icon: 'account_box', ref:'contact'}
+        ],
+        icons: [
+          { name: 'fab fa-facebook', link: 'https://www.facebook.com/selma.ortega?'},
+          { name: 'fab fa-twitter', link: 'https://twitter.com/SelmaOE' },
+          { name: 'fab fa-google-plus', link: 'https://www.google.com/'},
+          { name: 'fab fa-linkedin', link: 'https://mx.linkedin.com/' }
         ]
       }
     }

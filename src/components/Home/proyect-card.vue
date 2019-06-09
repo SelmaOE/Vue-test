@@ -15,7 +15,9 @@
         <!-- </v-hover> -->
       </v-flex>
       <v-flex xs12 sm6 md4>
-        <v-card dark height="100%" href="https://github.com/SelmaOE" target="_blank" class="project hvr-rectangle-out-orange" >
+        <v-layout align-center fill-height justify-center class="dark-background">
+        <v-card dark href="https://github.com/SelmaOE" target="_blank" class="project hvr-rectangle-out-orange" >
+
           <v-icon size="150px" class="fab fa-github"> </v-icon>
 
             <div>
@@ -23,6 +25,7 @@
               <p> Want to see more? See my Github </p>
             </div>
         </v-card>
+        </v-layout>
 
       </v-flex>
     </v-layout>
@@ -35,10 +38,17 @@
     data () {
       return {
         proyects:[
-        {id:1, title: 'Proyecto 1', card_text: 'Descripcion del proyecto 1', image:require('@/assets/project1.png')},
-        {id:2, title: 'Proyecto 2', card_text: 'Descripcion del proyecto 2', image:require('@/assets/image42.png')},
-        {id:3, title: 'Proyecto 3', card_text: 'Descripcion del proyecto 3', image:require('@/assets/image43.png')},
-        {id:4, title: 'Proyecto 4', card_text: 'Descripcion del proyecto 4', image:require('@/assets/image41.png')}
+        {id:1, title: 'Survival Island',
+         card_text: 'Explore and survive in an island (if you can).',
+         image:require('@/assets/project1.png')},
+        {id:2, title: 'War zone',
+         card_text: 'You against the world! Shoot at whatever comes. Difficulty progress on each level',
+         image:require('@/assets/image21.png')},
+        {id:3, title: 'Mini Platform',
+         card_text: 'Mini videogame made in phaser.io',
+         image:require('@/assets/project3.png')},
+        {id:4, title: 'Domu', card_text: 'App made in android studio for ordering homemade food',
+         image:require('@/assets/image41.png')}
         ]
 
       }
@@ -57,6 +67,9 @@
   text-align: center;
   justify-content: center;
   cursor:pointer;
+}
+.dark-background{
+  background-color: #424242;
 }
 /* Rectangle Out */
 .hvr-rectangle-out {

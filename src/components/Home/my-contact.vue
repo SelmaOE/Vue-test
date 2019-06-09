@@ -19,7 +19,7 @@
         required
       ></v-textarea>
       <div class="buttons">
-        <v-btn color="#2098D1" @click="submit">submit</v-btn>
+        <v-btn color="#2098D1" @click="submit">Contact Me!</v-btn>
         <v-btn color="#2098D1" @click="clear">clear</v-btn>
       </div>
     </form>

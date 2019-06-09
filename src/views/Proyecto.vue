@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <Footer :items="icons"/>
+    <Footer :icons="icons"/>
 
   </v-app>
 </template>
@@ -41,42 +41,44 @@
           { title: 'CONTACTO', icon: 'account_box'}
         ],
         proyects:[
-        {id:1, title: 'Proyecto 1', card_text: 'Descripcion del proyecto 1', image:require('@/assets/project1.png'),
+        {id:1, title: 'Survival Island',
+         card_text: 'Explore and survive in an island (if you can).',
         photos:[
           {src:require("@/assets/image11.png")},
           {src:require("@/assets/image12.png")},
           {src:require("@/assets/image13.png")},
           {src:require("@/assets/image14.png")}
         ]},
-        {id:2, title: 'Proyecto 2', card_text: 'Descripcion del proyecto 2', image:require('@/assets/image42.png'),
+        {id:2, title: 'War zone',
+         card_text: 'You against the world! Shoot at whatever comes. Difficulty progress on each level',
         photos:[
-          {src:require("@/assets/image41.png")},
-          {src:require("@/assets/image42.png")},
-          {src:require("@/assets/image43.png")},
-          {src:require("@/assets/image44.png")}
+          {src:require("@/assets/image21.png")},
+          {src:require("@/assets/image22.png")},
+          {src:require("@/assets/image23.png")},
+          {src:require("@/assets/image24.png")}
         ]},
-        {id:3, title: 'Proyecto 3', card_text: 'Descripcion del proyecto 3', image:require('@/assets/image43.png'),
+        {id:3, title: 'Mini Platform',
+         card_text: 'Mini videogame made in phaser.io',
         photos:[
-          {src:require("@/assets/image41.png")},
-          {src:require("@/assets/image42.png")},
-          {src:require("@/assets/image43.png")},
-          {src:require("@/assets/image44.png")}
+          {src:require("@/assets/image31.png")},
+          {src:require("@/assets/image32.png")},
+          {src:require("@/assets/image33.png")},
+          {src:require("@/assets/image34.png")}
         ]},
-        {id:4, title: 'Proyecto 4', card_text: 'Descripcion del proyecto 4', image:require('@/assets/image41.png'),
+        {id:4, title: 'Domu', card_text: 'App made in android studio for ordering homemade food',
         photos:[
           {src:require("@/assets/image41.png")},
           {src:require("@/assets/image42.png")},
-          {src:require("@/assets/image43.png")},
-          {src:require("@/assets/image44.png")}
+          {src:require("@/assets/image43.jpg")},
+          {src:require("@/assets/image44.jpg")}
         ]}
       ],
 
         icons: [
-          'fab fa-facebook',
-          'fab fa-twitter',
-          'fab fa-google-plus',
-          'fab fa-linkedin',
-          'fab fa-instagram'
+          { name: 'fab fa-facebook', link: 'https://www.facebook.com/selma.ortega?'},
+          { name: 'fab fa-twitter', link: 'https://twitter.com/SelmaOE' },
+          { name: 'fab fa-google-plus', link: 'https://www.google.com/'},
+          { name: 'fab fa-linkedin', link: 'https://mx.linkedin.com/' }
         ]
       }
     }

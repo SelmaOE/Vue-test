@@ -10,8 +10,9 @@
 
        <v-spacer></v-spacer>
       <v-btn v-for="icon in icons"
-        :key="icon" class="mx-3" dark icon>
-        <v-icon >{{ icon }}</v-icon>
+        :key="icon" class="mx-3" dark icon
+        :href="icon.link" target="_blank">
+        <v-icon >{{ icon.name }}</v-icon>
       </v-btn>
       </v-card-title>
     </v-card>
@@ -20,19 +21,7 @@
 
 <script>
   export default {
-    data(){
-      return{
-        icons: [
-          'fab fa-facebook',
-          'fab fa-twitter',
-          'fab fa-google-plus',
-          'fab fa-linkedin',
-          'fab fa-instagram'
-        ]
-
-      }
-
-    }
+    props:['icons']
 
   }
 </script>
